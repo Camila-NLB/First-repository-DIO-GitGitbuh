@@ -1,0 +1,40 @@
+algoritmo "Consumo_energia_mes"
+var
+   potencia_chuveiro, potencia_freezer, potencia_geladeira, potencia_lampada: real
+   horas_chuveiro, horas_freezer, horas_geladeira, horas_lampada: inteiro
+   consumo_chuveiro, consumo_freezer, consumo_geladeira, consumo_lampada: real
+   valor_total_mes: real
+
+inicio
+      //Potência dos aparelhos em watts
+      potencia_chuveiro<- 3000
+      potencia_freezer<- 200
+      potencia_geladeira<- 250
+      potencia_lampada<- 120
+
+      //Quantidade de horas por dia que utilizou o produto
+      Escreval("Insira a quantidade de horas por dia de utilização do chuveiro: ")
+      Leia(horas_chuveiro)
+      Escreval("Insira a quantidade de horas por dia de utilização do freezer: ")
+      Leia(horas_freezer)
+      Escreval("Insira a quantidade de horas por dia de utilização da geladeira: ")
+      Leia(horas_geladeira)
+      Escreval("Insira a quantidade de horas por dia de utilização da lâmpada: ")
+      Leia(horas_lampada)
+      
+      //Consumo em kW de cada aparelho por mês
+      consumo_chuveiro<- (potencia_chuveiro/1000*horas_chuveiro*30)
+      consumo_freezer<- (potencia_freezer/1000*horas_freezer*30)
+      consumo_geladeira<- (potencia_geladeira/1000*horas_geladeira*30)
+      consumo_lampada<- (potencia_lampada/1000*horas_lampada*30)
+      
+      Escreval("O consumo do chuveiro em kW por mês é: ", consumo_chuveiro, " kWh")
+      Escreval("O consumo do freezer em kW por mês é: ", consumo_freezer, " kWh")
+      Escreval("O consumo da geladeira em kW por mês é: ", consumo_geladeira, " kWh")
+      Escreval("O consumo da lâmpada em kW por mês é: ", consumo_lampada, " kWh")
+
+
+      //Valor da conta de energia ao final do mês
+      Escreval("O valor da conta de energia elétrica da residência ao final do mês é de R$ ", (consumo_chuveiro+consumo_freezer+consumo_geladeira+consumo_lampada)*0.30)
+      
+fimalgoritmo

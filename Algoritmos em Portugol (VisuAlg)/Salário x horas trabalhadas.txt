@@ -1,0 +1,12 @@
+algoritmo "Salário x horas trabalhadas"
+var
+   Horas_trabalhadas, valor_hora, salario: Real
+
+inicio
+      Escreva("Digite a quantidade de horas:")
+      Leia(Horas_trabalhadas)
+      Escreva("Digite o valor da hora:")
+      Leia(valor_hora)
+      salario<- Horas_trabalhadas*valor_hora
+      Escreva("O salário bruto é igual a R$ ", salario)
+fimalgoritmo

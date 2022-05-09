@@ -1,0 +1,24 @@
+algoritmo "desafio1"
+var
+   a,b,c,delta,x,x1,x2: Real
+   
+inicio
+      Escreva("Inserir os coeficientes da equação:")
+      Leia(a,b,c)
+      delta<-b^2-4*a*c
+      se delta >0 entao
+         x1<-(-b+RaizQ(delta))/(2*a)
+         x2<-(-b-RaizQ(delta))/(2*a)
+         Escreval("Existem duas raízes reais. ")
+         Escreval("x1 é igual a: ", x1)
+         Escreval("E x2 é igual a: ", x2)
+      senao
+           se delta =0 entao
+           x<-(-b+RaizQ(delta))/(2*a)
+           Escreval("Só há uma raiz real, que é igual a: ", x1)
+           senao
+                Escreva("Não há raizes reais.")
+           fimse
+      fimse
+         
+fimalgoritmo

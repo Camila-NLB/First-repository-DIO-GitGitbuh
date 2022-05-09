@@ -1,0 +1,32 @@
+algoritmo "contagem_inteligente"
+var
+   contador1, contador2, contagem_inicial, contagem_final, numeros: inteiro
+
+inicio
+
+
+      Escreval("CONTAGEM INTELIGENTE")
+      Escreval("--------------------")
+      Escreval("Início: ")
+      Leia(contagem_inicial)
+      contador1<- contagem_inicial
+      Escreval("Fim: ")
+      Leia(contagem_final)
+      contador2<- contagem_inicial
+      Escreval("--------------------")
+      Escreval("C O N T A N D O")
+      Escreval("--------------------")
+      Se (contagem_inicial > contagem_final) entao
+         Enquanto (contador1 > contagem_final) faca
+            Escreval(contador1)
+            contador1<- contador1-1
+            Escreval(contador1)
+         FimEnquanto
+      Senao
+         Enquanto (contador2 < contagem_final) faca
+            Escreval(contador2)
+            contador2<- contador2+1
+            Escreval(contador2)
+         FimEnquanto
+      FimSe
+fimalgoritmo
